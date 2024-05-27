@@ -1,0 +1,7 @@
+D:\Plazti proyecto escuela c#\CoreEscuela\bin\Debug\CoreEscuela.exe.config
+D:\Plazti proyecto escuela c#\CoreEscuela\bin\Debug\CoreEscuela.exe
+D:\Plazti proyecto escuela c#\CoreEscuela\bin\Debug\CoreEscuela.pdb
+D:\Plazti proyecto escuela c#\CoreEscuela\obj\Debug\CoreEscuela.csproj.AssemblyReference.cache
+D:\Plazti proyecto escuela c#\CoreEscuela\obj\Debug\CoreEscuela.csproj.CoreCompileInputs.cache
+D:\Plazti proyecto escuela c#\CoreEscuela\obj\Debug\CoreEscuela.exe
+D:\Plazti proyecto escuela c#\CoreEscuela\obj\Debug\CoreEscuela.pdb
