@@ -15,16 +15,20 @@ namespace CoreEscuela.Entidades
             public string Pais { get; set; }
 
             public string Ciudad { get; set; }
+            
+        //lo hice de TipoEscuela para que solo se puedan seleccionar las opciones del enum
+            public TiposEscuela TipoDeEscuela { get; set; }
 
         //<summary>
         //Esta es la forma que estoy acostumbrado en crear los constructores
-        //<summary>
+
         /*public Escuela(string nombre, int AñoDeCreacion)
         //{
         //    this.Nombre = nombre;
         //    this.AñoDeCreacion = AñoDeCreacion;
         //}
         */
+        //<summary>
 
         //<summary>
         //Esta es la forma reducida de hacer un constructor, similar a una expresion lambda
@@ -32,6 +36,12 @@ namespace CoreEscuela.Entidades
 
 
         public Escuela(string nombre, int añoDeCreacion) => (Nombre, AñoDeCreacion) = (nombre, añoDeCreacion);
+
+        //lo que esto hace es sobreescribir  este objeto para imprimir lo que deceo de el.
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}, Tipo: {TipoDeEscuela} \n Pais: {Pais}, Ciudad: {Ciudad}";
+        }
     }
 
 }

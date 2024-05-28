@@ -12,8 +12,12 @@ namespace CoreEscuela
         static void Main(string[] args)
         {
             var escuela = new Escuela("Wilson Academy ", 2001);
-            
-            Console.WriteLine(escuela.Nombre + escuela.AñoDeCreacion);
+            escuela.Pais = "Rusia";
+            escuela.Ciudad = "Moscow";
+            escuela.TipoDeEscuela = TiposEscuela.Primaria; //aqui me da la opcion de seleccionar uno de los valores dentro de tiposescuela
+                                                           
+           
+            Console.WriteLine(escuela);
             Console.ReadKey();
         }
     }
