@@ -8,6 +8,7 @@ namespace CoreEscuela.Entidades
 {
     internal class Escuela
     {        
+            // atributos
             public string Nombre { get; set; }
 
             public int AñoDeCreacion { get; set; }
@@ -36,6 +37,13 @@ namespace CoreEscuela.Entidades
 
 
         public Escuela(string nombre, int añoDeCreacion) => (Nombre, AñoDeCreacion) = (nombre, añoDeCreacion);
+
+        public Escuela(string nombre, int añoDeCreacion, TiposEscuela tipo, string pais="", string ciudad = "")
+        {
+            (Nombre, AñoDeCreacion) = (nombre, añoDeCreacion);
+            Pais = pais;
+            Ciudad = ciudad;
+        }
 
         //lo que esto hace es sobreescribir  este objeto para imprimir lo que deceo de el.
         public override string ToString()
