@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoreEscuela.Entidades
 {
-    internal class Escuela
+    public class Escuela
     {        
             // atributos
             public string Nombre { get; set; }
@@ -19,6 +19,8 @@ namespace CoreEscuela.Entidades
             
         //lo hice de TipoEscuela para que solo se puedan seleccionar las opciones del enum
             public TiposEscuela TipoDeEscuela { get; set; }
+
+            public List<Curso> Cursos { get; set; }
 
         //<summary>
         //Esta es la forma que estoy acostumbrado en crear los constructores

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CoreEscuela.App;
 using CoreEscuela.Entidades;
+using static System.Console;
 
 namespace CoreEscuela
 {
@@ -11,32 +13,49 @@ namespace CoreEscuela
     {
         static void Main(string[] args)
         {
-            var escuela = new Escuela("Wilson Academy ", 2001, TiposEscuela.PreEscolar, pais:"Republica Dominicana", ciudad:"Santo Domingo");
+          var engine = new EscuelaEngine();
+            engine.inicializar();
+            
+            ImprimirCursosEscuela(engine.Escuela);
 
-            //escuela.TipoDeEscuela = TiposEscuela.Primaria; //aqui me da la opcion de seleccionar uno de los valores dentro de tiposescuela
-
-            var curso1 = new Curso()
+            //delegados
+            engine.Escuela.Cursos.RemoveAll(delegate(Curso cur)
             {
-                Nombre = "101", 
-            };
-
-            var curso2 = new Curso()
-            {
-                Nombre = "201",
-            };
-
-            var curso3 = new Curso()
-            {
-                Nombre = "301",
-            };
-
-            Console.WriteLine(escuela);
+                return cur.Nombre == "301";
+            });
+            //expresion lambda
+            engine.Escuela.Cursos.RemoveAll((Curso cur) => cur.Nombre =="501");
+            
+            ImprimirCursosEscuela(engine.Escuela);
             Console.WriteLine(new string('=', 50));
-            Console.WriteLine($"{curso1.Nombre} , {curso1.UniqueId}");
-            Console.WriteLine($"{curso2.Nombre} , {curso2.UniqueId}");
-            Console.WriteLine($"{curso3.Nombre} , {curso3.UniqueId}");
-            Console.WriteLine(new string('=', 50));//cw y tab es un atajo para hacer el console.writeline
-            Console.ReadKey();
+
+            ReadKey();
+        }
+
+        private static bool predicado(Curso obj)
+        {
+            return obj.Nombre == "301";
+        }
+        /// <summary>
+        /// este metodo imprime todos los elementos dentro de cursos
+        /// </summary>
+        /// <param name="escuela"></param>
+        private static void ImprimirCursosEscuela(Escuela escuela)
+        {
+            
+            Console.WriteLine(new string('=',50));
+            Console.WriteLine("Cursos de la Escuela");
+            Console.WriteLine(new string('=', 50));
+
+            if (escuela?.Cursos != null )
+            foreach (var curso in escuela.Cursos)
+            {
+                Console.WriteLine($"Nombre: {curso.Nombre}  Uniqueid: {curso.UniqueId}");
+            }
+            else
+            {
+                Console.WriteLine("algo esta vacio");
+            }
         }
     }
 }
