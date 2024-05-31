@@ -15,19 +15,10 @@ namespace CoreEscuela
         {
           var engine = new EscuelaEngine();
             engine.inicializar();
-            
-            ImprimirCursosEscuela(engine.Escuela);
 
-            //delegados
-            engine.Escuela.Cursos.RemoveAll(delegate(Curso cur)
-            {
-                return cur.Nombre == "301";
-            });
-            //expresion lambda
-            engine.Escuela.Cursos.RemoveAll((Curso cur) => cur.Nombre =="501");
             
             ImprimirCursosEscuela(engine.Escuela);
-            Console.WriteLine(new string('=', 50));
+            
 
             ReadKey();
         }
