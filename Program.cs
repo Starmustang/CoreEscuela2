@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CoreEscuela.App;
 using CoreEscuela.Entidades;
+using CoreEscuela.Util;
 using static System.Console;
 
 namespace CoreEscuela
@@ -16,10 +17,10 @@ namespace CoreEscuela
           var engine = new EscuelaEngine();
             engine.inicializar();
 
-            
+            Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
+            Printer.Beep2();
             ImprimirCursosEscuela(engine.Escuela);
             
-
             ReadKey();
         }
 
@@ -33,10 +34,10 @@ namespace CoreEscuela
         /// <param name="escuela"></param>
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
+
+           
+            Printer.DibujarTitulo("Cursos de la Escuela");
             
-            Console.WriteLine(new string('=',50));
-            Console.WriteLine("Cursos de la Escuela");
-            Console.WriteLine(new string('=', 50));
 
             if (escuela?.Cursos != null )
             foreach (var curso in escuela.Cursos)

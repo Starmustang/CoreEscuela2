@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 namespace CoreEscuela.Entidades
 {
     public class Escuela
-    {        
-            // atributos
-            public string Nombre { get; set; }
+    {
+        // atributos
+
+            public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
+        public string Nombre { get; set; }
 
             public int AñoDeCreacion { get; set; }
 

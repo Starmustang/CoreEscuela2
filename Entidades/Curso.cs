@@ -13,8 +13,11 @@ namespace CoreEscuela.Entidades
 
         public TiposJornada Jornada { get; set; }
 
+        public List<Asignatura> Asignaturas { get; set; }
+
+        public List<Alumno> Alumnos { get; set; }
+        //esto es un constructor
         public Curso() => UniqueId = Guid.NewGuid().ToString(); //esto es una expresion lambda
         
-
     }
 }

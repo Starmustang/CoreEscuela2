@@ -44,12 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\EscuelaEngine.cs" />
+    <Compile Include="Entidades\Evaluaciones.cs" />
+    <Compile Include="Entidades\Asignatura.cs" />
+    <Compile Include="Entidades\Alumno.cs" />
     <Compile Include="Entidades\Curso.cs" />
     <Compile Include="Entidades\Escuela.cs" />
     <Compile Include="Entidades\TiposEscuelas.cs" />
     <Compile Include="Entidades\TiposJornada.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Printer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
