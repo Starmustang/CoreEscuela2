@@ -11,6 +11,7 @@ namespace CoreEscuela.App
     {
         public Escuela Escuela { get; set; }
 
+              
         public EscuelaEngine()
         {
             
@@ -22,38 +23,80 @@ namespace CoreEscuela.App
             Escuela = new Escuela("Wilson Academy ", 2001, TiposEscuela.PreEscolar, pais: "Republica Dominicana", ciudad: "Santo Domingo");
 
             CargarCursos();
-            CargarAlumnos();
             CargarAsignaturas();
-            CargarEvaluaciones();
+            CargarEvaluaciones();           
+            
+
+            
         }
 
-        private void CargarEvaluaciones()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         private void CargarAsignaturas()
         {
+            
             foreach (var curso in Escuela.Cursos)
             {
-                List<Asignatura> listaAsignaturas = new List<Asignatura>()
+                var listaAsignaturas = new List<Asignatura>()
                 {
                     new Asignatura{Nombre = "Matematicas"},
                     new Asignatura{Nombre = "Educacion Fisica"},
                     new Asignatura{Nombre = "Castellano"},
-                    new Asignatura{Nombre = "Ciencias naturales"},
+                    new Asignatura{Nombre = "Ciencias naturales"}, //, Evaluacion=(rnd.NextDouble() *(5))
                 };
-                curso.Asignaturas.AddRange(listaAsignaturas);
+                curso.Asignaturas = listaAsignaturas;
             }
+            
         }
 
-        private void CargarAlumnos()
+
+        private void CargarEvaluaciones()
+        {        
+            var lista = new List<Evaluaciones>();
+            foreach (var curso in Escuela.Cursos )
+            {
+                foreach (var asignatura in curso.Asignaturas)
+                {
+                    foreach (var alumno in curso.Alumnos)
+                    {
+                        Random rnd = new Random(System.Environment.TickCount);
+
+                        for (int i = 0;  i < 5;  i++)
+                        {
+                            var ev = new Evaluaciones
+                            {
+                                Asignatura = asignatura,
+                                Nombre = $"{asignatura.Nombre} EV#{i + 1}",
+                                Nota = (double)(5 * rnd.NextDouble()),
+                                Alumno = alumno
+                            };
+                            alumno.Evaluaciones.Add(ev);
+                        }
+                    }
+                }
+
+            }
+            
+        }
+
+
+
+        private List<Alumno> GenerarAlumnosAlAzar(int cantidad)
         {
-            throw new NotImplementedException();
+            string[] nombre1 = { "Alba", "Felipa", "Eusebio", "Farid", "Donald", "Alvaro", "Nicolás" };
+            string[] apellido1 = { "Ruiz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera" };
+            string[] nombre2 = { "Freddy", "Anabel", "Rick", "Murty", "Silvana", "Diomedes", "Nicomedes", "Teodoro" };
+
+            var listaAlumnos = from n1 in nombre1
+                               from n2 in nombre2
+                               from a1 in apellido1
+                               select new Alumno { Nombre = $"{n1} {n2} {a1}"};
+
+            return listaAlumnos.OrderBy((al)=> al.UniqueId).Take(cantidad).ToList();
         }
 
         private void CargarCursos()
-        {
+        {   
+         
             Escuela.Cursos = new List<Curso>()
             {
                 new Curso(){Nombre = "101", Jornada = TiposJornada.Mañana},
@@ -68,6 +111,15 @@ namespace CoreEscuela.App
 
                 new Curso{Nombre = "501", Jornada = TiposJornada.Tarde}
             };
+
+            Random rnd = new Random();
+
+            foreach (var curso in Escuela.Cursos)
+            {
+                int cantidadRandom = rnd.Next(5, 50);
+                curso.Alumnos = GenerarAlumnosAlAzar(cantidadRandom); //llena cursos con alumnos
+
+            }
         }
     }
 }

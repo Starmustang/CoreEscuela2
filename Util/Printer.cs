@@ -11,7 +11,7 @@ namespace CoreEscuela.Util
     {
         public static void DibujarLinea(int tam = 10)
         {
-            Console.WriteLine("".PadLeft(tam, '*'));
+            //Console.WriteLine("".PadLeft(tam, '*'));
             WriteLine(new string('=', tam));
         }
 

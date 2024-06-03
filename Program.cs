@@ -19,15 +19,41 @@ namespace CoreEscuela
 
             Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
             Printer.Beep2();
-            ImprimirCursosEscuela(engine.Escuela);
+            //ImprimirCursosEscuela(engine.Escuela);
+            ImprimirAlumnosmoderno(engine.Escuela);
             
             ReadKey();
         }
 
-        private static bool predicado(Curso obj)
+        private static void ImprimirAlumnosmoderno(Escuela escuela)
         {
-            return obj.Nombre == "301";
+            Printer.DibujarTitulo("Notas de Alumnos ");
+            if (escuela?.Cursos != null)
+            {
+                foreach (var Curso in escuela.Cursos)
+                {
+                    foreach (Asignatura laAsignatura in Curso.Asignaturas)
+                    {
+                        Printer.DibujarTitulo($"Curso: \"{Curso.Nombre}\", Alumnos: \"{Curso.Alumnos.Count}\", Asignatura: \"{laAsignatura.Nombre}\"");
+                        var cont = 1;
+                        foreach (var ElAlumno in Curso.Alumnos)
+                        {
+                            Console.WriteLine($"{cont}, - Alumno \"{ElAlumno.Nombre}\", IdUnico: \"{ElAlumno.UniqueId}\"");
+                            var temp = new List<Evaluaciones>();
+                            temp.AddRange(ElAlumno.Evaluaciones.Where((n => n.Asignatura.Nombre == laAsignatura.Nombre && n.Alumno.UniqueId == ElAlumno.UniqueId)));
+                            foreach (var evaluaciones in temp)
+                            {
+                                Console.WriteLine($"Nombre: \"{evaluaciones.Nombre}\", Nota: \"{evaluaciones.Nota}\"");
+                            }
+                            cont++;
+                        }
+                    }
+                }
+                Printer.DibujarLinea(50);
+            }
         }
+
+
         /// <summary>
         /// este metodo imprime todos los elementos dentro de cursos
         /// </summary>
