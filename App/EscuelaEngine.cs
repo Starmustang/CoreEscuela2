@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CoreEscuela.App
 {
-    public class EscuelaEngine
+    public sealed class EscuelaEngine //sealed permite instanciar pero no heredar
     {
         public Escuela Escuela { get; set; }
 
@@ -17,6 +17,8 @@ namespace CoreEscuela.App
             
 
         }
+
+        
 
         public void inicializar()
         {
@@ -51,7 +53,7 @@ namespace CoreEscuela.App
 
         private void CargarEvaluaciones()
         {        
-            var lista = new List<Evaluaciones>();
+            var lista = new List<Evaluacion>();
             foreach (var curso in Escuela.Cursos )
             {
                 foreach (var asignatura in curso.Asignaturas)
@@ -62,7 +64,7 @@ namespace CoreEscuela.App
 
                         for (int i = 0;  i < 5;  i++)
                         {
-                            var ev = new Evaluaciones
+                            var ev = new Evaluacion
                             {
                                 Asignatura = asignatura,
                                 Nombre = $"{asignatura.Nombre} EV#{i + 1}",
@@ -121,5 +123,7 @@ namespace CoreEscuela.App
 
             }
         }
+
+
     }
 }

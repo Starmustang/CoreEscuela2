@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|d:\\plazti proyecto escuela c#\\coreescuela\\app\\escuelaengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:app\\escuelaengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\evaluaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\evaluaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\tiposjornada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\tiposjornada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\objetoescuelabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\objetoescuelabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +35,12 @@
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|d:\\plazti proyecto escuela c#\\coreescuela\\util\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\util\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:util\\printer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\tiposjornada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\tiposjornada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\escuela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\escuela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,52 +54,65 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Printer.cs",
-              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Util\\Printer.cs",
-              "RelativeDocumentMoniker": "Util\\Printer.cs",
-              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Util\\Printer.cs",
-              "RelativeToolTip": "Util\\Printer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T23:03:07.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Asignatura.cs",
-              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Asignatura.cs",
-              "RelativeDocumentMoniker": "Entidades\\Asignatura.cs",
-              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Asignatura.cs",
-              "RelativeToolTip": "Entidades\\Asignatura.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Title": "ObjetoEscuelaBase.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\ObjetoEscuelaBase.cs",
+              "RelativeDocumentMoniker": "Entidades\\ObjetoEscuelaBase.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\ObjetoEscuelaBase.cs",
+              "RelativeToolTip": "Entidades\\ObjetoEscuelaBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T01:14:04.425Z",
+              "WhenOpened": "2024-06-05T00:38:22.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Evaluacion.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Evaluacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Evaluacion.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Evaluacion.cs",
+              "RelativeToolTip": "Entidades\\Evaluacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T01:15:19.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TiposJornada.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\TiposJornada.cs",
+              "RelativeDocumentMoniker": "Entidades\\TiposJornada.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\TiposJornada.cs",
+              "RelativeToolTip": "Entidades\\TiposJornada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T00:31:38.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "EscuelaEngine.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\EscuelaEngine.cs",
               "RelativeDocumentMoniker": "App\\EscuelaEngine.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\EscuelaEngine.cs",
               "RelativeToolTip": "App\\EscuelaEngine.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAIwEQAAABGAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAmwH4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T23:34:03.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwC0AAAB3AAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCwAAACNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T00:52:45.215Z",
               "EditorCaption": ""
@@ -104,48 +125,60 @@
               "RelativeDocumentMoniker": "Entidades\\Alumno.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Alumno.cs",
               "RelativeToolTip": "Entidades\\Alumno.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T01:09:10.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "Asignatura.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Asignatura.cs",
+              "RelativeDocumentMoniker": "Entidades\\Asignatura.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Asignatura.cs",
+              "RelativeToolTip": "Entidades\\Asignatura.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T01:14:04.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Curso.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Curso.cs",
               "RelativeDocumentMoniker": "Entidades\\Curso.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Curso.cs",
               "RelativeToolTip": "Entidades\\Curso.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T00:27:49.724Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Evaluaciones.cs",
-              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Evaluaciones.cs",
-              "RelativeDocumentMoniker": "Entidades\\Evaluaciones.cs",
-              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Evaluaciones.cs",
-              "RelativeToolTip": "Entidades\\Evaluaciones.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "DocumentIndex": 9,
+              "Title": "Escuela.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Escuela.cs",
+              "RelativeDocumentMoniker": "Entidades\\Escuela.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Escuela.cs",
+              "RelativeToolTip": "Entidades\\Escuela.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T01:15:19.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-04T23:17:22.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TiposJornada.cs",
-              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\TiposJornada.cs",
-              "RelativeDocumentMoniker": "Entidades\\TiposJornada.cs",
-              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\TiposJornada.cs",
-              "RelativeToolTip": "Entidades\\TiposJornada.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "DocumentIndex": 8,
+              "Title": "Printer.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Util\\Printer.cs",
+              "RelativeDocumentMoniker": "Util\\Printer.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Util\\Printer.cs",
+              "RelativeToolTip": "Util\\Printer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:31:38.738Z"
+              "WhenOpened": "2024-06-02T23:03:07.003Z"
             }
           ]
         }

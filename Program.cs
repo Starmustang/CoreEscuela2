@@ -20,8 +20,31 @@ namespace CoreEscuela
             Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
             Printer.Beep2();
             //ImprimirCursosEscuela(engine.Escuela);
-            ImprimirAlumnosmoderno(engine.Escuela);
+            //ImprimirAlumnosmoderno(engine.Escuela);
             
+            var evaluacion = new Evaluacion() { Nombre="Evaluacion de math", Nota=4.5, };
+            Printer.DibujarTitulo("Evaluacion");
+            WriteLine($"evaluacion: {evaluacion.Nombre}");
+            WriteLine($"evaluacion: {evaluacion.UniqueId}");
+            WriteLine($"evaluacion: {evaluacion.Nota}");
+            WriteLine($"evaluacion: {evaluacion.GetType()}");
+
+            ObjetoEscuelaBase ob;
+
+            ob = evaluacion;
+            Printer.DibujarTitulo("ObjetoEscuela");
+            WriteLine($"evaluacion: {ob.Nombre}");
+            WriteLine($"evaluacion: {ob.UniqueId}");            
+            WriteLine($"evaluacion: {ob.GetType()}");
+
+            //is, para verificar si un objeto es de un tipo en específico.
+            if (ob is Alumno)
+            {
+                Alumno alumnoRecuperado = (Alumno)ob;
+            }
+            //as, para tratar un objeto como un tipo específico, en caso de no poder convertir el objeto entonces va a asignar un valor null.
+            Alumno alumnoRecuperado2 = ob as Alumno;
+
             ReadKey();
         }
 
@@ -39,11 +62,11 @@ namespace CoreEscuela
                         foreach (var ElAlumno in Curso.Alumnos)
                         {
                             Console.WriteLine($"{cont}, - Alumno \"{ElAlumno.Nombre}\", IdUnico: \"{ElAlumno.UniqueId}\"");
-                            var temp = new List<Evaluaciones>();
+                            var temp = new List<Evaluacion>();
                             temp.AddRange(ElAlumno.Evaluaciones.Where((n => n.Asignatura.Nombre == laAsignatura.Nombre && n.Alumno.UniqueId == ElAlumno.UniqueId)));
                             foreach (var evaluaciones in temp)
                             {
-                                Console.WriteLine($"Nombre: \"{evaluaciones.Nombre}\", Nota: \"{evaluaciones.Nota}\"");
+                                Console.WriteLine($"Nombre: \"{evaluaciones.Nombre}\", Nota: \"{evaluaciones.Nota}\" 1");
                             }
                             cont++;
                         }

@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace CoreEscuela.Entidades
 {
-    public class Escuela
+    public class Escuela: ObjetoEscuelaBase
     {
         // atributos
 
-            public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
-        public string Nombre { get; set; }
+           
 
             public int AñoDeCreacion { get; set; }
 
