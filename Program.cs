@@ -22,28 +22,8 @@ namespace CoreEscuela
             //ImprimirCursosEscuela(engine.Escuela);
             //ImprimirAlumnosmoderno(engine.Escuela);
             
-            var evaluacion = new Evaluacion() { Nombre="Evaluacion de math", Nota=4.5, };
-            Printer.DibujarTitulo("Evaluacion");
-            WriteLine($"evaluacion: {evaluacion.Nombre}");
-            WriteLine($"evaluacion: {evaluacion.UniqueId}");
-            WriteLine($"evaluacion: {evaluacion.Nota}");
-            WriteLine($"evaluacion: {evaluacion.GetType()}");
 
-            ObjetoEscuelaBase ob;
-
-            ob = evaluacion;
-            Printer.DibujarTitulo("ObjetoEscuela");
-            WriteLine($"evaluacion: {ob.Nombre}");
-            WriteLine($"evaluacion: {ob.UniqueId}");            
-            WriteLine($"evaluacion: {ob.GetType()}");
-
-            //is, para verificar si un objeto es de un tipo en específico.
-            if (ob is Alumno)
-            {
-                Alumno alumnoRecuperado = (Alumno)ob;
-            }
-            //as, para tratar un objeto como un tipo específico, en caso de no poder convertir el objeto entonces va a asignar un valor null.
-            Alumno alumnoRecuperado2 = ob as Alumno;
+            var listaObjetos = engine.GetObjetoEscuela();
 
             ReadKey();
         }

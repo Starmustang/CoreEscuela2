@@ -124,6 +124,23 @@ namespace CoreEscuela.App
             }
         }
 
+        public List<ObjetoEscuelaBase> GetObjetoEscuela()
+        {
+            var listobj = new List<ObjetoEscuelaBase>();
+            listobj.Add(Escuela);
+            listobj.AddRange(Escuela.Cursos);
+            foreach (var curso in Escuela.Cursos )
+            {
+                listobj.AddRange(curso.Asignaturas);
+                listobj.AddRange(curso.Alumnos);
 
+                foreach (var alumno in curso.Alumnos)
+                {
+                    listobj.AddRange(alumno.Evaluaciones);
+                }
+            }
+            
+            return listobj;
+        }
     }
 }
