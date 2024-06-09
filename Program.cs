@@ -14,20 +14,25 @@ namespace CoreEscuela
     {
         static void Main(string[] args)
         {
-          var engine = new EscuelaEngine();
+            var engine = new EscuelaEngine();
             engine.inicializar();
 
             Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
-            Printer.Beep2();
-            //ImprimirCursosEscuela(engine.Escuela);
-            //ImprimirAlumnosmoderno(engine.Escuela);
-            
+            Printer.Beep2();    
+            var listaObjetos = engine.GetObjetoEscuela(
+            out int conteoEvaluaciones,
+            out int conteoCursos,
+            out int conteoAsignaturas,
+            out int conteoAlumnos
+                );
 
-            var listaObjetos = engine.GetObjetoEscuela();
+        
+
+            //engine.Escuela.LimpiarLugar();
 
             ReadKey();
         }
-
+        #region metodos de impresion
         private static void ImprimirAlumnosmoderno(Escuela escuela)
         {
             Printer.DibujarTitulo("Notas de Alumnos ");
@@ -78,5 +83,6 @@ namespace CoreEscuela
                 Console.WriteLine("algo esta vacio");
             }
         }
+        #endregion 
     }
 }

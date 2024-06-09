@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreEscuela.Util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CoreEscuela.Entidades
 {
-    public class Escuela: ObjetoEscuelaBase
+    public class Escuela: ObjetoEscuelaBase, ILugar
     {
         // atributos
 
@@ -17,26 +18,13 @@ namespace CoreEscuela.Entidades
             public string Pais { get; set; }
 
             public string Ciudad { get; set; }
-            
+
+            public string Direccion { get; set; }
+
         //lo hice de TipoEscuela para que solo se puedan seleccionar las opciones del enum
-            public TiposEscuela TipoDeEscuela { get; set; }
+        public TiposEscuela TipoDeEscuela { get; set; }
 
-            public List<Curso> Cursos { get; set; }
-
-        //<summary>
-        //Esta es la forma que estoy acostumbrado en crear los constructores
-
-        /*public Escuela(string nombre, int AñoDeCreacion)
-        //{
-        //    this.Nombre = nombre;
-        //    this.AñoDeCreacion = AñoDeCreacion;
-        //}
-        */
-        //<summary>
-
-        //<summary>
-        //Esta es la forma reducida de hacer un constructor, similar a una expresion lambda
-        //<summary>
+            public List<Curso> Cursos { get; set; }    
 
 
         public Escuela(string nombre, int añoDeCreacion) => (Nombre, AñoDeCreacion) = (nombre, añoDeCreacion);
@@ -52,6 +40,18 @@ namespace CoreEscuela.Entidades
         public override string ToString()
         {
             return $"Nombre: {Nombre}, Tipo: {TipoDeEscuela} \n Pais: {Pais}, Ciudad: {Ciudad}";
+        }
+
+        public void LimpiarLugar()
+        {
+            
+            Printer.DibujarLinea();
+            Printer.Beep2(1000, cantidad:3);
+            Console.WriteLine("Limpiando establecimiento....");
+
+            Cursos.ForEach(a => a.LimpiarLugar());
+
+            Printer.DibujarTitulo($"Escuela {Nombre} Limpia");
         }
     }
 

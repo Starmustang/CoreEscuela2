@@ -32,7 +32,7 @@ namespace CoreEscuela.App
             
         }
 
-        
+        #region Cargar informacion
         private void CargarAsignaturas()
         {
             
@@ -123,24 +123,60 @@ namespace CoreEscuela.App
 
             }
         }
+        #endregion
 
-        public List<ObjetoEscuelaBase> GetObjetoEscuela()
+        public List<ObjetoEscuelaBase> GetObjetoEscuela(
+            out int conteoEvaluaciones,
+            out int conteoCursos,
+            out int conteoAsignaturas,
+            out int conteoAlumnos,
+            bool traeEvaluaciones = true,
+            bool traeAlumnos = true,
+            bool traeAsignaturas = true,
+            bool traeCursos = true
+            
+            )
         {
+            conteoEvaluaciones = 0;
+            conteoAlumnos = 0;
+            conteoAsignaturas= 0;
+            conteoCursos = 0;
             var listobj = new List<ObjetoEscuelaBase>();
             listobj.Add(Escuela);
-            listobj.AddRange(Escuela.Cursos);
-            foreach (var curso in Escuela.Cursos )
+            
+            if (traeCursos == true)
             {
-                listobj.AddRange(curso.Asignaturas);
-                listobj.AddRange(curso.Alumnos);
+                listobj.AddRange(Escuela.Cursos);
+                conteoCursos = Escuela.Cursos.Count;
+            }
+            foreach (var curso in Escuela.Cursos)
+            {
 
+                conteoAsignaturas += curso.Asignaturas.Count;
+                conteoAlumnos += curso.Alumnos.Count;
+                if (traeAsignaturas == true)
+                {
+                    
+                    listobj.AddRange(curso.Asignaturas);
+                }
+                
+                if (traeAlumnos == true)
+                {
+                    
+                    listobj.AddRange(curso.Alumnos);
+                }
+                
+
+                if(traeEvaluaciones == true)
                 foreach (var alumno in curso.Alumnos)
                 {
                     listobj.AddRange(alumno.Evaluaciones);
+                        conteoEvaluaciones += alumno.Evaluaciones.Count;
                 }
             }
-            
+
             return listobj;
         }
+      
     }
 }

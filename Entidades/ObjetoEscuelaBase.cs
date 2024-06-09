@@ -10,5 +10,10 @@ namespace CoreEscuela.Entidades
     {
         public string UniqueId { get; private set; } = Guid.NewGuid().ToString();
         public string Nombre { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Nombre}, {UniqueId}";
+        }
     }
 }
