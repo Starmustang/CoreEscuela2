@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -125,7 +126,49 @@ namespace CoreEscuela.App
         }
         #endregion
 
-        public List<ObjetoEscuelaBase> GetObjetoEscuela(
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuela(
+            out int conteoEvaluaciones,
+           bool traeEvaluaciones = true,
+            bool traeAlumnos = true,
+            bool traeAsignaturas = true,
+            bool traeCursos = true)
+        {
+            return GetObjetoEscuela(out conteoEvaluaciones, out int dummy, out dummy, out dummy);
+        }
+
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuela(
+           out int conteoEvaluaciones,
+           out int conteoCursos,
+          bool traeEvaluaciones = true,
+           bool traeAlumnos = true,
+           bool traeAsignaturas = true,
+           bool traeCursos = true)
+        {
+            return GetObjetoEscuela(out conteoEvaluaciones, out conteoCursos, out int dummy, out dummy);
+        }
+
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuela(
+           bool traeEvaluaciones = true,
+            bool traeAlumnos = true,
+            bool traeAsignaturas = true,
+            bool traeCursos = true)
+        {
+            return GetObjetoEscuela(out int dummy, out dummy, out dummy, out dummy);
+        }
+
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuela(
+         out int conteoEvaluaciones,
+         out int conteoCursos,
+         out int conteoAsignaturas,
+        bool traeEvaluaciones = true,
+         bool traeAlumnos = true,
+         bool traeAsignaturas = true,
+         bool traeCursos = true)
+        {
+            return GetObjetoEscuela(out conteoEvaluaciones, out conteoCursos, out conteoAsignaturas, out int dummy);
+        }
+
+        public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuela(
             out int conteoEvaluaciones,
             out int conteoCursos,
             out int conteoAsignaturas,
