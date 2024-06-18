@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:app\\reporteador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|d:\\plazti proyecto escuela c#\\coreescuela\\app\\escuelaengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -72,14 +72,14 @@
               "RelativeDocumentMoniker": "App\\Reporteador.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\Reporteador.cs",
               "RelativeToolTip": "App\\Reporteador.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAUwCAAAAAbAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAnwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T14:49:23.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Llave Diccionario.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Llave Diccionario.cs",
               "RelativeDocumentMoniker": "Entidades\\Llave Diccionario.cs",
@@ -179,13 +179,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAcwBsAAAAJAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAUwBwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T00:52:45.215Z",
               "EditorCaption": ""

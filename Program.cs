@@ -23,8 +23,9 @@ namespace CoreEscuela
             Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
 
             var reporteador = new Reporteador(engine.GetDiccionarioObjetos());
-
-
+            var evalList = reporteador.GetListaEvaliacion();
+            var listaAsg = reporteador.GetListaAsignaturas();
+            var listaEvalXAsig = reporteador.GetDicEvaluaXAsig();
         }
 
         private static void AccionDelEvento(object sender, EventArgs e)
