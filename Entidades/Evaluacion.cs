@@ -17,6 +17,10 @@ namespace CoreEscuela.Entidades
 
         public double Nota { get; set; }
 
-       
+        public override string ToString()
+        {
+            return $"{Nota}, {Alumno.Nombre}, {Asignatura.Nombre}";
+        }
+
     }
 }

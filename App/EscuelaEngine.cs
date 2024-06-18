@@ -1,5 +1,7 @@
 ﻿using CoreEscuela.Entidades;
+using CoreEscuela.Util;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -12,14 +14,14 @@ namespace CoreEscuela.App
     {
         public Escuela Escuela { get; set; }
 
-              
+
         public EscuelaEngine()
         {
-            
+
 
         }
 
-        
+
 
         public void inicializar()
         {
@@ -27,16 +29,16 @@ namespace CoreEscuela.App
 
             CargarCursos();
             CargarAsignaturas();
-            CargarEvaluaciones();           
-            
+            CargarEvaluaciones();
 
-            
+
+
         }
 
         #region Cargar informacion
         private void CargarAsignaturas()
         {
-            
+
             foreach (var curso in Escuela.Cursos)
             {
                 var listaAsignaturas = new List<Asignatura>()
@@ -48,14 +50,14 @@ namespace CoreEscuela.App
                 };
                 curso.Asignaturas = listaAsignaturas;
             }
-            
+
         }
 
 
         private void CargarEvaluaciones()
-        {        
+        {
             var lista = new List<Evaluacion>();
-            foreach (var curso in Escuela.Cursos )
+            foreach (var curso in Escuela.Cursos)
             {
                 foreach (var asignatura in curso.Asignaturas)
                 {
@@ -63,13 +65,13 @@ namespace CoreEscuela.App
                     {
                         Random rnd = new Random(System.Environment.TickCount);
 
-                        for (int i = 0;  i < 5;  i++)
+                        for (int i = 0; i < 5; i++)
                         {
                             var ev = new Evaluacion
                             {
                                 Asignatura = asignatura,
                                 Nombre = $"{asignatura.Nombre} EV#{i + 1}",
-                                Nota = (double)(5 * rnd.NextDouble()),
+                                Nota = Math.Round((double)(5 * rnd.NextDouble()), 2),
                                 Alumno = alumno
                             };
                             alumno.Evaluaciones.Add(ev);
@@ -78,7 +80,7 @@ namespace CoreEscuela.App
                 }
 
             }
-            
+
         }
 
 
@@ -92,14 +94,14 @@ namespace CoreEscuela.App
             var listaAlumnos = from n1 in nombre1
                                from n2 in nombre2
                                from a1 in apellido1
-                               select new Alumno { Nombre = $"{n1} {n2} {a1}"};
+                               select new Alumno { Nombre = $"{n1} {n2} {a1}" };
 
-            return listaAlumnos.OrderBy((al)=> al.UniqueId).Take(cantidad).ToList();
+            return listaAlumnos.OrderBy((al) => al.UniqueId).Take(cantidad).ToList();
         }
 
         private void CargarCursos()
-        {   
-         
+        {
+
             Escuela.Cursos = new List<Curso>()
             {
                 new Curso(){Nombre = "101", Jornada = TiposJornada.Mañana},
@@ -126,6 +128,8 @@ namespace CoreEscuela.App
         }
         #endregion
 
+
+        #region Sobre cargar informacion
         public IReadOnlyList<ObjetoEscuelaBase> GetObjetoEscuela(
             out int conteoEvaluaciones,
            bool traeEvaluaciones = true,
@@ -177,16 +181,16 @@ namespace CoreEscuela.App
             bool traeAlumnos = true,
             bool traeAsignaturas = true,
             bool traeCursos = true
-            
+
             )
         {
             conteoEvaluaciones = 0;
             conteoAlumnos = 0;
-            conteoAsignaturas= 0;
+            conteoAsignaturas = 0;
             conteoCursos = 0;
             var listobj = new List<ObjetoEscuelaBase>();
             listobj.Add(Escuela);
-            
+
             if (traeCursos == true)
             {
                 listobj.AddRange(Escuela.Cursos);
@@ -199,27 +203,100 @@ namespace CoreEscuela.App
                 conteoAlumnos += curso.Alumnos.Count;
                 if (traeAsignaturas == true)
                 {
-                    
+
                     listobj.AddRange(curso.Asignaturas);
                 }
-                
+
                 if (traeAlumnos == true)
                 {
-                    
+
                     listobj.AddRange(curso.Alumnos);
                 }
-                
 
-                if(traeEvaluaciones == true)
-                foreach (var alumno in curso.Alumnos)
-                {
-                    listobj.AddRange(alumno.Evaluaciones);
+
+                if (traeEvaluaciones == true)
+                    foreach (var alumno in curso.Alumnos)
+                    {
+                        listobj.AddRange(alumno.Evaluaciones);
                         conteoEvaluaciones += alumno.Evaluaciones.Count;
-                }
+                    }
             }
 
             return listobj;
         }
-      
+        #endregion
+
+       public void ImprimirDiccionario(Dictionary<Llave_Diccionario, IEnumerable<ObjetoEscuelaBase>> dic, bool imprEval = false)
+        {
+            foreach (var obj in dic)
+            {
+                Printer.DibujarTitulo(obj.Key.ToString());
+                
+                foreach (var val in obj.Value)
+                {
+                    switch (obj.Key)
+                    {   
+                        case Llave_Diccionario.Evaluacion:
+                                if(imprEval)
+                                Console.WriteLine(val);
+                            break;
+                        case Llave_Diccionario.Escuela:
+                            Console.WriteLine($"Escuela: {val}");
+                            break;
+                        case Llave_Diccionario.Alumno:
+                            Console.WriteLine($"Alumno: {val}");
+                            break;
+                        case Llave_Diccionario.Asignatura:
+                            Console.WriteLine($"Asignatura: {val}");
+                            break;
+                        case Llave_Diccionario.Curso:
+                            var curtmp = val as Curso;
+                            if (curtmp != null)
+                            { 
+                                int count = curtmp.Alumnos.Count;
+                                Console.WriteLine($"Curso: {val.Nombre} Cantidad de alumnos: {count}");
+                            }
+                            
+                            break;
+                        default:
+                            Console.WriteLine(val);
+                            break;
+                    }                
+                }
+            }
+        }
+
+       public Dictionary<Llave_Diccionario, IEnumerable<ObjetoEscuelaBase>> GetDiccionarioObjetos()
+        {
+            
+
+            var diccionario = new Dictionary<Llave_Diccionario, IEnumerable<ObjetoEscuelaBase>>();
+
+            diccionario.Add(Llave_Diccionario.Escuela,new List<ObjetoEscuelaBase> {Escuela});
+            diccionario.Add(Llave_Diccionario.Curso, Escuela.Cursos);
+
+            var listatmp = new List<Evaluacion>();
+            var listatmpas = new List<Asignatura>();
+            var listatmpal = new List<Alumno>();
+            foreach (var curso in  Escuela.Cursos)
+            {
+                listatmpas.AddRange(curso.Asignaturas);
+                listatmpal.AddRange(curso.Alumnos);
+
+                ;
+                foreach (var alumno in curso.Alumnos)
+                {
+                    listatmp.AddRange(alumno.Evaluaciones);
+                }
+                
+            }
+            diccionario.Add(Llave_Diccionario.Evaluacion, listatmp);
+            diccionario.Add(Llave_Diccionario.Asignatura, listatmpas);
+            diccionario.Add(Llave_Diccionario.Alumno, listatmpal);
+
+            return diccionario;
+        }
+
+
     }
 }

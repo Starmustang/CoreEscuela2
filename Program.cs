@@ -21,14 +21,32 @@ namespace CoreEscuela
             Printer.Beep2();    
             var listaObjetos = engine.GetObjetoEscuela(
             out int conteoEvaluaciones,
-            out int conteoCursos,
-            out int conteoAsignaturas,
-            out int conteoAlumnos
+            out int conteoCursos
+            
                 );
+            Printer.DibujarTitulo("Otro diccionario");
+            Dictionary<int, string> diccionario = new Dictionary<int, string>();
 
-        
+            diccionario.Add(10, "rodolfo");
 
-            //engine.Escuela.LimpiarLugar();
+            diccionario.Add(23, "Euclides");
+
+            foreach (var keyValePair in diccionario)
+            {
+                Console.WriteLine($"Key: {keyValePair.Key} Valor: {keyValePair.Value}");
+            }
+
+            //WriteLine(diccionario[23]);
+
+            Dictionary<string, string> dic = new Dictionary<string, string>();
+            dic.Add("Pantalla", "es donde veo mis clases de platzi");
+
+            //WriteLine(dic["Pantalla"]);
+
+            //8engine.Escuela.LimpiarLugar();
+            var dictmp = engine.GetDiccionarioObjetos();
+
+            engine.ImprimirDiccionario(dictmp, true);
 
             ReadKey();
         }
