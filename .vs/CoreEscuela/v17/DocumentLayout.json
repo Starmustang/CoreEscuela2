@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|d:\\plazti proyecto escuela c#\\coreescuela\\app\\reporteador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:app\\reporteador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\evaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|solutionrelative:entidades\\llave diccionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4858C65B-7E7C-44C7-9F5B-71CFB8E0C920}|CoreEscuela.csproj|D:\\Plazti proyecto escuela c#\\CoreEscuela\\entidades\\escuela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Reporteador.cs",
+              "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\Reporteador.cs",
+              "RelativeDocumentMoniker": "App\\Reporteador.cs",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\Reporteador.cs",
+              "RelativeToolTip": "App\\Reporteador.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAUwCAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T14:49:23.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Llave Diccionario.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Llave Diccionario.cs",
               "RelativeDocumentMoniker": "Entidades\\Llave Diccionario.cs",
@@ -70,11 +87,12 @@
               "RelativeToolTip": "Entidades\\Llave Diccionario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T23:05:23.618Z"
+              "WhenOpened": "2024-06-15T23:05:23.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Evaluacion.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Evaluacion.cs",
               "RelativeDocumentMoniker": "Entidades\\Evaluacion.cs",
@@ -87,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Alumno.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Alumno.cs",
               "RelativeDocumentMoniker": "Entidades\\Alumno.cs",
@@ -99,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Escuela.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Escuela.cs",
               "RelativeDocumentMoniker": "Entidades\\Escuela.cs",
@@ -111,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Curso.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Curso.cs",
               "RelativeDocumentMoniker": "Entidades\\Curso.cs",
@@ -123,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ObjetoEscuelaBase.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\ObjetoEscuelaBase.cs",
               "RelativeDocumentMoniker": "Entidades\\ObjetoEscuelaBase.cs",
@@ -136,20 +154,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EscuelaEngine.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\EscuelaEngine.cs",
               "RelativeDocumentMoniker": "App\\EscuelaEngine.cs",
               "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\App\\EscuelaEngine.cs",
               "RelativeToolTip": "App\\EscuelaEngine.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAkwDsAAAAmAAAA",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAYwOUAAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T23:34:03.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ILugar.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\ILugar.cs",
               "RelativeDocumentMoniker": "Entidades\\ILugar.cs",
@@ -161,20 +179,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAwwBIAAABDAAAA",
+              "ToolTip": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T00:52:45.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Printer.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Util\\Printer.cs",
               "RelativeDocumentMoniker": "Util\\Printer.cs",
@@ -186,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TiposJornada.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\TiposJornada.cs",
               "RelativeDocumentMoniker": "Entidades\\TiposJornada.cs",
@@ -198,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Asignatura.cs",
               "DocumentMoniker": "D:\\Plazti proyecto escuela c#\\CoreEscuela\\Entidades\\Asignatura.cs",
               "RelativeDocumentMoniker": "Entidades\\Asignatura.cs",

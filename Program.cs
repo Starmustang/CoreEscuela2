@@ -16,43 +16,15 @@ namespace CoreEscuela
         {
             AppDomain.CurrentDomain.ProcessExit += AccionDelEvento;
             AppDomain.CurrentDomain.ProcessExit += (o, s) => Printer.Beep2(2000, 1000, 1);
-            AppDomain.CurrentDomain.ProcessExit -= AccionDelEvento;
+            
             var engine = new EscuelaEngine();
             engine.inicializar();
-            
+
             Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
-            return;
-            Printer.Beep2();    
-            var listaObjetos = engine.GetObjetoEscuela(
-            out int conteoEvaluaciones,
-            out int conteoCursos
-            
-                );
-            Printer.DibujarTitulo("Otro diccionario");
-            Dictionary<int, string> diccionario = new Dictionary<int, string>();
 
-            diccionario.Add(10, "rodolfo");
+            var reporteador = new Reporteador(engine.GetDiccionarioObjetos());
 
-            diccionario.Add(23, "Euclides");
 
-            foreach (var keyValePair in diccionario)
-            {
-                Console.WriteLine($"Key: {keyValePair.Key} Valor: {keyValePair.Value}");
-            }
-
-            //WriteLine(diccionario[23]);
-
-            Dictionary<string, string> dic = new Dictionary<string, string>();
-            dic.Add("Pantalla", "es donde veo mis clases de platzi");
-
-            //WriteLine(dic["Pantalla"]);
-
-            //8engine.Escuela.LimpiarLugar();
-            var dictmp = engine.GetDiccionarioObjetos();
-
-            engine.ImprimirDiccionario(dictmp, true);
-
-            ReadKey();
         }
 
         private static void AccionDelEvento(object sender, EventArgs e)
