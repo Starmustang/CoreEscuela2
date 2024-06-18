@@ -57,13 +57,14 @@ namespace CoreEscuela.App
         private void CargarEvaluaciones()
         {
             var lista = new List<Evaluacion>();
+            Random rnd = new Random();
             foreach (var curso in Escuela.Cursos)
             {
                 foreach (var asignatura in curso.Asignaturas)
                 {
                     foreach (var alumno in curso.Alumnos)
                     {
-                        Random rnd = new Random(System.Environment.TickCount);
+                        
 
                         for (int i = 0; i < 5; i++)
                         {

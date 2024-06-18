@@ -14,10 +14,14 @@ namespace CoreEscuela
     {
         static void Main(string[] args)
         {
+            AppDomain.CurrentDomain.ProcessExit += AccionDelEvento;
+            AppDomain.CurrentDomain.ProcessExit += (o, s) => Printer.Beep2(2000, 1000, 1);
+            AppDomain.CurrentDomain.ProcessExit -= AccionDelEvento;
             var engine = new EscuelaEngine();
             engine.inicializar();
-
+            
             Printer.DibujarTitulo("Bienvenidos a la mejor escuela");
+            return;
             Printer.Beep2();    
             var listaObjetos = engine.GetObjetoEscuela(
             out int conteoEvaluaciones,
@@ -49,6 +53,14 @@ namespace CoreEscuela
             engine.ImprimirDiccionario(dictmp, true);
 
             ReadKey();
+        }
+
+        private static void AccionDelEvento(object sender, EventArgs e)
+        {
+            Printer.DibujarTitulo("Saliendo");
+            Printer.DibujarTitulo("Salio");
+            Printer.Beep2(3000, 1000, 3);
+            
         }
         #region metodos de impresion
         private static void ImprimirAlumnosmoderno(Escuela escuela)
