@@ -21,7 +21,7 @@ namespace CoreEscuela.App
             _diccionario = dicObEsc;
         }
 
-        public IEnumerable<Evaluacion> GetListaEvaliacion()
+        public IEnumerable<Evaluacion> GetListaEvaluacion()
         {
             
             if(_diccionario.TryGetValue(Llave_Diccionario.Evaluacion, out IEnumerable<ObjetoEscuelaBase> lista))
@@ -43,7 +43,7 @@ namespace CoreEscuela.App
 
         public IEnumerable<string> GetListaAsignaturas(out IEnumerable<Evaluacion> listaEvaluaciones)
         {
-             listaEvaluaciones = GetListaEvaliacion();
+             listaEvaluaciones = GetListaEvaluacion();
             
             return (from Evaluacion ev in listaEvaluaciones                  
                    select ev.Asignatura.Nombre).Distinct();
@@ -74,19 +74,17 @@ namespace CoreEscuela.App
             foreach (var asigConEval in dicEvalXAsig )
             {
                 var dummy = from eval in asigConEval.Value
+                            group eval by eval.Alumno.Nombre
+                            into grupoEvalsAlumno
+                           
                             select  new 
                             { 
-                                alumnoNombre = eval.Alumno.Nombre,
-                                nombreEval = eval.Nombre,
-                                eval.Nota
+                               alumnoNombre = grupoEvalsAlumno.Key,
+                               promedio = grupoEvalsAlumno.Average(evaluacion=> evaluacion.Nota)
 
                             };
-                foreach (var item in dummy )
-                {
-                    
-                }
+                
             }
-
 
             return rta;
         }
